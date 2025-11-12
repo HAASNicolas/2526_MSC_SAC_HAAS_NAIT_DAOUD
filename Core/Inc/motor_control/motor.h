@@ -8,6 +8,15 @@
 #ifndef INC_MOTOR_CONTROL_MOTOR_H_
 #define INC_MOTOR_CONTROL_MOTOR_H_
 
+#include "main.h"
+#include <stdint.h>
+
+extern TIM_HandleTypeDef htim1;
+
+void motor_init(void);
+void motor_set_duty_cycle(float duty); // Définit le rapport cyclique (entre 0 et 1)
 
 
 #endif /* INC_MOTOR_CONTROL_MOTOR_H_ */
+
+
