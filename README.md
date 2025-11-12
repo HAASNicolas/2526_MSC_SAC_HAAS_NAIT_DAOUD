@@ -20,5 +20,6 @@ On veut un rapport cyclique de 60%.
 alpha = CCR/ARR <=> CCR = ARR * alpha => 8500 * 0.6 = 5100.
 On a donc fixé CNT à 5100
 
-<img width="800" height="480" alt="tek00A000" src="https://github.com/user-attachments/assets/7fb055e4-0c87-4b85-a33d-7d0c89de64b3" />
+<img width="800" height="480" alt="tek00A000" src="https://github.com/user-attachments/assets/f5fc29eb-de17-4460-9ab9-802295889b5c" />
+
 La vision à l'oscilloscope nous permet de vérifier que la fréquence de TIM1_CHANNEL_1 et TIM1_CHANNEL_2 est bien de 20kHz.
