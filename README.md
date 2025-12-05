@@ -21,9 +21,11 @@ alpha = CCR/ARR <=> CCR = ARR * alpha => 8500 * 0.6 = 5100.
 On a donc fixé CNT à 5100
 
 <img alt="TIM1: CH1 et CH1N" src="Images/tim1_ch1(n).png" />
-La vision à l'oscilloscope nous permet de vérifier pour TIM1 que :
-* La fréquence est de 20kHz avec un rapport cyclique de 60%.
-* Et que l'on a bien activé la sortie complémentaire.
+La vision à l'oscilloscope nous permet de vérifier que pour le channel 1 du timer 1 on a bien :
+* Une fréquence de 20kHz avec un rapport cyclique de 60%.
+* Et la sortie complémentaire qui est activée.
 
 Quand au temps mort, il est aussi présent; ce qui évitera de cramer les transistors.
-<img alt="dead time" src="Images/DEAD_TIME.png" />
+<img alt="dead time" src="Images/dead_time.png" />
+
+Ces résultats sont aussi valables pour le channel 2 du timer 1.
