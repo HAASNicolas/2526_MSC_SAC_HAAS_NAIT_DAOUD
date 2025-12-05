@@ -32,7 +32,7 @@ Core/Src/motor_control/motor.o: ../Core/Src/motor_control/motor.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- C:/Users/elnai/Downloads/2526_MSC_SAC-master/2526_MSC_SAC-master/TP/software/Base/Core/Inc/motor_control/motor.h
+ C:/ProgramsWorkspace/ENSEA/3A/2526_MSC_SAC_HAAS_NAIT_DAOUD/Core/Inc/motor_control/motor.h
 ../Core/Inc/motor_control/motor.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -67,4 +67,4 @@ Core/Src/motor_control/motor.o: ../Core/Src/motor_control/motor.c \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-C:/Users/elnai/Downloads/2526_MSC_SAC-master/2526_MSC_SAC-master/TP/software/Base/Core/Inc/motor_control/motor.h:
+C:/ProgramsWorkspace/ENSEA/3A/2526_MSC_SAC_HAAS_NAIT_DAOUD/Core/Inc/motor_control/motor.h:

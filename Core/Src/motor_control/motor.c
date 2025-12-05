@@ -13,14 +13,15 @@
 
 
 
-#define CCR 5100
 #define DEAD_TIME_NS        39
 #define DUTY_CYCLE_TEST     0.60      // utilisé avec CCR
+#define CCR                 8500 * DUTY_CYCLE_TEST // = 5100 pour 60%
 
 
 
 void motor_init(void) {
 	HAL_TIM_PWM_Init(&htim1);
+	HAL_TIMEx_ConfigDeadTime(&htim1, DEAD_TIME_NS);
 	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
 	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
