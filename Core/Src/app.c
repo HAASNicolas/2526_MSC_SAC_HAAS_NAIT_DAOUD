@@ -6,6 +6,7 @@
  */
 
 #include "app.h"
+#include <stdlib.h>
 
 #include "user_interface/shell.h"
 
@@ -17,7 +18,6 @@ void init_device(void){
 	hshell1.drv.transmit = shell_uart2_transmit;
 	hshell1.drv.receive = shell_uart2_receive;
 	shell_init(&hshell1);
-	shell_add('speed', set_speed, "Définit une vitesse au moteur");
 	HAL_UART_Receive_IT(&huart2, (uint8_t *)&shell_uart2_received_char, 1);
 
 	// LED

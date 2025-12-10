@@ -9,6 +9,7 @@
 
 #include "motor.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 
@@ -38,12 +39,7 @@ void motor_init(void) {
 	motor_set_duty_cycle(DUTY_CYCLE_INITIAL);
 }
 
-void set_speed(int argc, char ** argv) {
-	if (argc < 1) {
-		printf("Error: expected one argument!\r\n");
-		return -1;
-	}
-	int speed = atoi(argv[1]);
+void set_speed(int speed) {
 	if (speed > MAX_SPEED) {
 		speed = MAX_SPEED;
 	}

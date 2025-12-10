@@ -4,8 +4,9 @@
  *
  * This file contains the implementation of the shell module, which provides a command-line interface.
  */
-
+#include <stdlib.h>
 #include "user_interface/shell.h"
+#include "motor_control/motor.h"
 
 h_shell_t hshell1;
 
@@ -83,6 +84,14 @@ static int sh_test_list(h_shell_t* h_shell, int argc, char** argv)
 }
 
 
+static int sh_speed(h_shell_t* h_shell, int argc, char ** argv) {
+	if (argc < 1) {
+		return -1;
+	}
+	int speed = atoi(argv[1]);
+	set_speed(speed);
+	return 0;
+}
 
 
 /**
@@ -104,6 +113,7 @@ void shell_init(h_shell_t* h_shell)
 
 	shell_add(h_shell, "help", sh_help, "Help");
 	shell_add(h_shell, "test", sh_test_list, "Test list");
+	shell_add(h_shell, "speed", sh_speed, "Définit une vitesse au moteur");
 }
 
 /**
