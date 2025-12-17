@@ -15,18 +15,20 @@
 
 
 #define DEAD_TIME_NS        39
-#define DUTY_CYCLE_INITIAL  0.60      // utilisé avec CCR
-#define DUTY_CYCLE_STOP     0.50      // utilisé avec CCR
+#define DUTY_CYCLE_INITIAL  0.50      // utilisé avec CCR
+#define DUTY_CYCLE_STOP     0.50
+#define DUTY_CYCLE_RANGE	(1 - DUTY_CYCLE_STOP)
 #define ARR					8500
 //#define CCR                 ARR * DUTY_CYCLE_TEST // = 5100 pour 60%
-#define MAX_SPEED			1000
+#define MAX_SPEED			100.0
 
 
 
 void motor_set_duty_cycle(float duty_cycle) {
-	int ccr = ARR * duty_cycle;
-	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, ccr);
-	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, ccr);
+	int ccr1 = ARR * duty_cycle;
+	int ccr2 = ARR * (1 - duty_cycle);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, ccr1);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, ccr2);
 }
 
 void motor_init(void) {
@@ -43,6 +45,7 @@ void set_speed(int speed) {
 	if (speed > MAX_SPEED) {
 		speed = MAX_SPEED;
 	}
-	float duty_cycle = speed / MAX_SPEED * DUTY_CYCLE_STOP + DUTY_CYCLE_STOP;
+	float duty_cycle = (float) speed;
+	duty_cycle = DUTY_CYCLE_STOP + ((duty_cycle / MAX_SPEED) * DUTY_CYCLE_RANGE);
 	motor_set_duty_cycle(duty_cycle);
 }
