@@ -32,7 +32,7 @@ La vision à l'oscilloscope nous permet de vérifier que pour le channel 1 du ti
 
 * Une fréquence de 20kHz avec un rapport cyclique de 75%.
 * Et la sortie complémentaire qui est activée, et décalée.
-<img alt="TIM1: CH1 et CH1N" src="Images/PWM_75%.png" />
+<img alt="PWM 75%" src="Images/PWM-75.png" />
 Pour activer le décalage, on a dû mettre "Counter mode" à "Center Aligned mode1"
 <img alt="counter mode" src="Images/counter_mode.png" />
 
@@ -43,4 +43,4 @@ Ces résultats sont aussi valables pour le channel 2 du timer 1.
 
 On a donc fait tourné le moteur à 20% :
 En jaune on voit la tension aux bornes du moteur.
-<img alt="moteur tourne à 20%" src="Images/PWM_20%.png" />
+<img alt="moteur tourne à 20%" src="Images/PWM-20.png" />
