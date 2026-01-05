@@ -51,6 +51,7 @@ En jaune on voit la tension aux bornes du moteur.
 
 <img alt="Démarrer et arrêter le moteur" src="Images/start_stop.png" />
 On peut remarquer que le code permettant d'activer et de désactiver la génération des PWM, fonctionne :
+
 * ```speed 750``` Le moteur ne tourne pas, car les PWM ne sont pas générées.
 * ```start``` Les PWM sont générées, mais le rapport cyclique est à 50% donc le moteur ne tourne pas.
 * ```speed 750``` Le moteur tourne avec un rapport cyclique de 75%
