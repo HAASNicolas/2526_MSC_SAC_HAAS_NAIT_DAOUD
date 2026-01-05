@@ -84,6 +84,16 @@ static int sh_test_list(h_shell_t* h_shell, int argc, char** argv)
 }
 
 
+static int sh_start(h_shell_t* h_shell, int argc, char ** argv) {
+	motor_start();
+	return 0;
+}
+
+static int sh_stop(h_shell_t* h_shell, int argc, char ** argv) {
+	motor_stop();
+	return 0;
+}
+
 static int sh_speed(h_shell_t* h_shell, int argc, char ** argv) {
 	if (argc < 1) {
 		return -1;
@@ -113,6 +123,8 @@ void shell_init(h_shell_t* h_shell)
 
 	shell_add(h_shell, "help", sh_help, "Help");
 	shell_add(h_shell, "test", sh_test_list, "Test list");
+	shell_add(h_shell, "start", sh_start, "Vitesse nulle et activer la génération des PWM");
+	shell_add(h_shell, "stop", sh_stop, "Désactiver la génération des PWM");
 	shell_add(h_shell, "speed", sh_speed, "Définit une vitesse au moteur");
 }
 

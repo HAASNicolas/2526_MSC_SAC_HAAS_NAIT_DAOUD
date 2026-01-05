@@ -2,8 +2,10 @@
 ../Core/Src/user_interface/shell.c:32:12:is_string_valid	24	static
 ../Core/Src/user_interface/shell.c:61:12:sh_help	48	static
 ../Core/Src/user_interface/shell.c:76:12:sh_test_list	40	static
-../Core/Src/user_interface/shell.c:87:12:sh_speed	32	static
-../Core/Src/user_interface/shell.c:104:6:shell_init	24	static
-../Core/Src/user_interface/shell.c:130:5:shell_add	24	static
-../Core/Src/user_interface/shell.c:155:12:shell_exec	64	static
-../Core/Src/user_interface/shell.c:196:5:shell_run	24	static
+../Core/Src/user_interface/shell.c:87:12:sh_start	24	static
+../Core/Src/user_interface/shell.c:92:12:sh_stop	24	static
+../Core/Src/user_interface/shell.c:97:12:sh_speed	32	static
+../Core/Src/user_interface/shell.c:114:6:shell_init	24	static
+../Core/Src/user_interface/shell.c:142:5:shell_add	24	static
+../Core/Src/user_interface/shell.c:167:12:shell_exec	64	static
+../Core/Src/user_interface/shell.c:208:5:shell_run	24	static

@@ -1,3 +1,5 @@
 ../Core/Src/motor_control/motor.c:27:6:motor_set_duty_cycle	24	static
 ../Core/Src/motor_control/motor.c:34:6:motor_init	8	static
-../Core/Src/motor_control/motor.c:44:6:set_speed	24	static
+../Core/Src/motor_control/motor.c:39:6:motor_start	8	static
+../Core/Src/motor_control/motor.c:47:6:motor_stop	8	static
+../Core/Src/motor_control/motor.c:54:6:set_speed	24	static

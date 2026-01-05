@@ -44,3 +44,20 @@ Ces résultats sont aussi valables pour le channel 2 du timer 1.
 On a donc fait tourné le moteur à 20% :
 En jaune on voit la tension aux bornes du moteur.
 <img alt="moteur tourne à 20%" src="Images/PWM-20.png" />
+
+## Commande en boucle ouverte, mesure de Vitesse et de courant
+
+### Commande de la vitesse
+
+<img alt="Démarrer et arrêter le moteur" src="Images/start_stop.png" />
+On peut remarquer que le code permettant d'activer et de désactiver la génération des PWM, fonctionne :
+* ```speed 750``` Le moteur ne tourne pas, car les PWM ne sont pas générées.
+* ```start``` Les PWM sont générées, mais le rapport cyclique est à 50% donc le moteur ne tourne pas.
+* ```speed 750``` Le moteur tourne avec un rapport cyclique de 75%
+* ```speed 600``` Le moteur tourne moins vite (rapport cyclique de 60%)
+* ```stop``` La génération des PWM est désactivée, donc le moteur s'arrête
+* ```start``` Les PWM sont générées, mais le rapport cyclique est à 50% donc le moteur ne tourne pas.
+* ```speed 600``` Le moteur tourne avec un rapport cyclique de 60%
+* ```start``` Les PWM sont REgénérées, et le rapport cyclique est mis à 50% donc le moteur ne tourne pas.
+
+
