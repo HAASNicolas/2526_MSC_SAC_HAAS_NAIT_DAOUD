@@ -1,5 +1,6 @@
-../Core/Src/motor_control/motor.c:27:6:motor_set_duty_cycle	1
-../Core/Src/motor_control/motor.c:34:6:motor_init	1
-../Core/Src/motor_control/motor.c:39:6:motor_start	1
-../Core/Src/motor_control/motor.c:47:6:motor_stop	1
-../Core/Src/motor_control/motor.c:54:6:set_speed	2
+../Core/Src/motor_control/motor.c:29:6:motor_set_duty_cycle	1
+../Core/Src/motor_control/motor.c:38:6:asserv_duty_cycle	3
+../Core/Src/motor_control/motor.c:61:6:motor_init	1
+../Core/Src/motor_control/motor.c:66:6:motor_start	1
+../Core/Src/motor_control/motor.c:74:6:motor_stop	1
+../Core/Src/motor_control/motor.c:81:6:set_speed	2
