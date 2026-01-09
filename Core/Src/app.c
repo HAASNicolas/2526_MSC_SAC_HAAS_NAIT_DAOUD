@@ -30,7 +30,7 @@ void init_device(void){
 	// MOTOR
 	motor_init();
 	// ASSERV (PID)
-//	asserv_init();
+	asserv_init();
 //
 // Initialisation data acquistion
 	// ANALOG INPUT

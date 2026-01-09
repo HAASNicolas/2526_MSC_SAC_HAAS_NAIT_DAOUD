@@ -61,4 +61,16 @@ On peut remarquer que le code permettant d'activer et de désactiver la généra
 * ```speed 600``` Le moteur tourne avec un rapport cyclique de 60%
 * ```start``` Les PWM sont REgénérées, et le rapport cyclique est mis à 50% donc le moteur ne tourne pas.
 
+<img alt="Rampe" src="Images/rampe.png" />
 
+### Mesure de courant
+
+On doit mesurer le courant qui rentre les transistors.
+
+...
+
+Pour réaliser les mesures de courant, on utilise les pins suivantes :
+* Bus_I_mesure	PC2
+* U_I_mesure	PA1		ADC1_IN2
+* V_I_mesure	PB1		ADC1_IN12
+* W_I_mesure	PB0		ADC1_IN15 (pas utilisé)

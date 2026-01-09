@@ -15,21 +15,12 @@
 
 
 #define DEAD_TIME_NS        39
-#define DUTY_CYCLE_STOP     0.50
 #define DUTY_CYCLE_INITIAL  DUTY_CYCLE_STOP // 0.60
 //#define DUTY_CYCLE_RANGE	(1 - DUTY_CYCLE_STOP)
-#define ARR					8500
 //#define CCR                 ARR * DUTY_CYCLE_TEST // = 5100 pour 60%
 #define MAX_SPEED			1000.0
-#define ALPHA_DUTY_CYCLE	0.01 // Augmentation max du rapport cyclique à chaque IT
 
-float duty_cycle_goal;
-
-void motor_set_duty_cycle(float duty_cycle) {
-	duty_cycle_goal = duty_cycle;
-	HAL_TIM_Base_Start_IT(&htim7);
-}
-
+/*
 void asserv_duty_cycle(void) {
 	static float duty_cycle_current = DUTY_CYCLE_INITIAL;
 	float delta = duty_cycle_goal - duty_cycle_current;
@@ -47,7 +38,7 @@ void asserv_duty_cycle(void) {
 	int ccr2 = ARR * (1 - duty_cycle_current);
 	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, ccr1);
 	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, ccr2);
-}
+}*/
 
 void motor_init(void) {
 	HAL_TIM_PWM_Init(&htim1);

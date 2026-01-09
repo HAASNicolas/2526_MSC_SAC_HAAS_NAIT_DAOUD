@@ -22,7 +22,7 @@
 #include "stm32g4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "motor_control/motor.h"
+#include "motor_control/asserv.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
