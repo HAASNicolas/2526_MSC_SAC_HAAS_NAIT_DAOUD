@@ -1,3 +1,7 @@
-../Core/Src/motor_control/asserv.c:20:6:asserv_init	8	static
-../Core/Src/motor_control/asserv.c:39:6:motor_set_duty_cycle	16	static
-../Core/Src/motor_control/asserv.c:44:6:asserv_duty_cycle	24	static
+../Core/Src/motor_control/asserv.c:31:6:asserv_init	8	static
+../Core/Src/motor_control/asserv.c:41:6:correcteur	48	static
+../Core/Src/motor_control/asserv.c:51:6:asserv_speed	4	static
+../Core/Src/motor_control/asserv.c:55:6:asserv_current	4	static
+../Core/Src/motor_control/asserv.c:59:6:asserv_loop	16	static
+../Core/Src/motor_control/asserv.c:79:6:motor_set_duty_cycle	16	static
+../Core/Src/motor_control/asserv.c:85:6:asserv_duty_cycle	24	static

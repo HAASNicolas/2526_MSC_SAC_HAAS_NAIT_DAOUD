@@ -1,8 +1,9 @@
-../Core/Src/tim.c:32:6:MX_TIM1_Init	120	static
-../Core/Src/tim.c:117:6:MX_TIM3_Init	40	static
-../Core/Src/tim.c:156:6:MX_TIM7_Init	24	static
-../Core/Src/tim.c:189:6:HAL_TIM_Base_MspInit	24	static
-../Core/Src/tim.c:220:6:HAL_TIMEx_HallSensor_MspInit	48	static
-../Core/Src/tim.c:258:6:HAL_TIM_MspPostInit	48	static
-../Core/Src/tim.c:306:6:HAL_TIM_Base_MspDeInit	16	static
-../Core/Src/tim.c:336:6:HAL_TIMEx_HallSensor_MspDeInit	16	static
+../Core/Src/tim.c:33:6:MX_TIM1_Init	120	static
+../Core/Src/tim.c:118:6:MX_TIM2_Init	40	static
+../Core/Src/tim.c:158:6:MX_TIM3_Init	72	static
+../Core/Src/tim.c:215:6:MX_TIM7_Init	24	static
+../Core/Src/tim.c:248:6:HAL_TIM_Base_MspInit	32	static
+../Core/Src/tim.c:294:6:HAL_TIM_IC_MspInit	48	static
+../Core/Src/tim.c:332:6:HAL_TIM_MspPostInit	48	static
+../Core/Src/tim.c:380:6:HAL_TIM_Base_MspDeInit	16	static
+../Core/Src/tim.c:424:6:HAL_TIM_IC_MspDeInit	16	static

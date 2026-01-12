@@ -34,9 +34,9 @@ void init_device(void){
 //
 // Initialisation data acquistion
 	// ANALOG INPUT
-//	input_analog_init();
+	input_analog_init();
 	// ENCODER INPUT
-//	input_encoder_init();
+	input_encoder_init();
 }
 
 uint8_t shell_uart2_transmit(const char *pData, uint16_t size)
@@ -60,5 +60,5 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 }
 
 void loop(){
-
+	asserv_loop();
 }

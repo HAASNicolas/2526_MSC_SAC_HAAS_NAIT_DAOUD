@@ -6,3 +6,6 @@
  */
 
 #include "acquisition/input_analog.h"
+
+void input_analog_init() {
+}

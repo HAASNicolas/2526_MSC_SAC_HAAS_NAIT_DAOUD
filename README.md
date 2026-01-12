@@ -70,7 +70,22 @@ On doit mesurer le courant qui rentre les transistors.
 ...
 
 Pour réaliser les mesures de courant, on utilise les pins suivantes :
+
 * Bus_I_mesure	PC2
 * U_I_mesure	PA1		ADC1_IN2
 * V_I_mesure	PB1		ADC1_IN12
 * W_I_mesure	PB0		ADC1_IN15 (pas utilisé)
+
+## Commande en boucle ouverte, mesure de Vitesse et de courant
+### Mesure de vitesse
+
+P = 0.15
+I = 0.06
+
+le codeur de vitesse est relié sur :
+
+* TIM3_CH1	PA6
+* TIM3_CH2	PA4
+
+
+On utlise le TIM2 pour déclancher régulièrement l'asservisement en vitesse.
