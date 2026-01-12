@@ -78,7 +78,7 @@ void asserv_loop() {
 
 void motor_set_duty_cycle(float duty_cycle) {
 	duty_cycle_goal = duty_cycle;
-	HAL_ADC_Start(&hadc1); // Lance une conversion du courant
+	//HAL_ADC_Start(&hadc1); // Lance une conversion du courant
 	HAL_TIM_Base_Start_IT(&htim7);
 }
 

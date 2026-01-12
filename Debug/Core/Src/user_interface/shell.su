@@ -5,7 +5,7 @@
 ../Core/Src/user_interface/shell.c:87:12:sh_start	24	static
 ../Core/Src/user_interface/shell.c:92:12:sh_stop	24	static
 ../Core/Src/user_interface/shell.c:97:12:sh_speed	32	static
-../Core/Src/user_interface/shell.c:114:6:shell_init	24	static
-../Core/Src/user_interface/shell.c:142:5:shell_add	24	static
-../Core/Src/user_interface/shell.c:167:12:shell_exec	64	static
-../Core/Src/user_interface/shell.c:208:5:shell_run	24	static
+../Core/Src/user_interface/shell.c:120:6:shell_init	24	static
+../Core/Src/user_interface/shell.c:148:5:shell_add	24	static
+../Core/Src/user_interface/shell.c:173:12:shell_exec	64	static
+../Core/Src/user_interface/shell.c:214:5:shell_run	24	static

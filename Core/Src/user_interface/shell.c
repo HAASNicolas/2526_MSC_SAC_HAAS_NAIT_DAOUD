@@ -103,6 +103,12 @@ static int sh_speed(h_shell_t* h_shell, int argc, char ** argv) {
 	return 0;
 }
 
+/*
+void sh_printf_value(char * name, char * value) {
+	size = snprintf(h_shell->print_buffer, "%s : %d\r\n", name, value);
+	h_shell->drv.transmit(h_shell->print_buffer, size);
+}*/
+
 
 /**
  * @brief Initializes the shell instance.
